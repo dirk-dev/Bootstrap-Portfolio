@@ -27,6 +27,11 @@ hr {
     border: 0 none;
 }
 
+.headshot {
+    float: left;
+    margin: 0 23px 23px 0;
+}
+
 #app {
     width: 100%;
     margin: auto;
@@ -52,7 +57,7 @@ h1 {
 .btn-primary:hover {
     background-color: black;
     border-color: black;
-}
+    }
 
 .form {
     width: 700px;
