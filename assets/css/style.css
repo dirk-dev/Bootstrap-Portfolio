@@ -59,7 +59,7 @@ h1 {
     border-color: black;
     }
 
-.form {
+.form, .main {
     width: 700px;
     padding: 24px;
     margin-left: auto;
