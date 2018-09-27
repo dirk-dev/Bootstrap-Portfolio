@@ -6,6 +6,18 @@ h1 {
     font-weight: bold;
 }
 
+.wrapper {
+    height: auto !important;
+    height: 100%;
+    min-height: 100%;
+    margin: 0 auto -105px;
+}
+
+footer,
+.push {
+    height: 105px;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: #777777;
@@ -15,7 +27,7 @@ body {
     flex-direction: column;
     min-height: 400px;
     margin-bottom: 100px;
-    clear: both;
+    /* clear: both; */
 }
 
 hr {
@@ -36,7 +48,7 @@ hr {
     width: 100%;
     margin: auto;
     font-family: Georgia, 'Times New Roman', Times, serif;
-   }
+}
 
 .navbar-brand {
     background-color: #4aaaa5;
@@ -57,9 +69,10 @@ h1 {
 .btn-primary:hover {
     background-color: black;
     border-color: black;
-    }
+}
 
-.form, .main {
+.form,
+.main {
     width: 700px;
     padding: 24px;
     margin-left: auto;
@@ -70,9 +83,18 @@ h1 {
     display: block;
 }
 
+.placeholder_l {
+    margin: 25px;
+    float: left;
+}
+
+.placeholder_r {
+    margin: 25px;
+    float: right;
+}
+
 footer {
     padding: 30px 0;
-    /* clear: both; */
     font-size: 12px;
     color: #fff;
     color: #ccc;
