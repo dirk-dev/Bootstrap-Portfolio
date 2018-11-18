@@ -2,32 +2,30 @@
     box-sizing: border-box;
 }
 
-h1 {
-    font-weight: bold;
-}
-
-.wrapper {
-    height: auto !important;
-    height: 100%;
-    min-height: 100%;
-    margin: 0 auto -105px;
-}
-
 footer,
-.push {
+    {
     height: 105px;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: #777777;
     padding-bottom: 70px;
-    background: url("../images/old_moon.png");
-    display: flex;
-    flex-direction: column;
+    background-image: url("../images/3d-code.png");
+    /* display: flex;
+    flex-direction: column; */
     min-height: 400px;
     margin-bottom: 100px;
-    /* clear: both; */
+}
+
+a,
+span {
+    font-size: 19px;
+}
+
+.container-fluid {
+    background-color: white;
+    width: auto;
 }
 
 hr {
@@ -41,7 +39,7 @@ hr {
 
 .headshot {
     float: left;
-    margin: 0 23px 23px 0;
+    margin: 0 23px 60px 0;
 }
 
 #app {
@@ -50,20 +48,43 @@ hr {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+.card {
+    max-height: 450px;
+    padding: 15px 0 0 0;
+}
+
 .navbar-brand {
-    background-color: #4aaaa5;
+    background-color: #123679;
     width: 200px;
     text-align: center;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px #090f1b;
+    margin-top: -2px;
+}
+
+.nav-link {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
 }
 
 h1 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: #4aaaa5;
+    color: #123679;
+    font-family: 'Noto Serif', serif;
+    font-weight: bold;
+    font-size: 45px;
+}
+
+h2 {
+    color: #123679;
+    font-family: 'Noto Serif', serif;
+    font-weight: bold;
+    font-size: 30px;
 }
 
 .btn-primary {
-    background-color: #4aaaa5;
-    border-color: #4aaaa5;
+    background-color: #123679;
+    border-color: #123679;
 }
 
 .btn-primary:hover {
@@ -80,17 +101,53 @@ h1 {
     margin-top: 24px;
     margin-bottom: 50px;
     background-color: white;
-    display: block;
 }
 
-.placeholder_l {
-    margin: 25px;
-    float: left;
+#portfolio-header {
+    width: 700px;
+    background-color: white;
+    text-align: center;
 }
 
-.placeholder_r {
-    margin: 25px;
-    float: right;
+#myCarousel {
+    width: 800px;
+    margin: -75px auto;
+}
+
+.carousel-item {
+    width: 800px;
+    height: 925px;
+    overflow: hidden;
+}
+
+.carousel-caption {
+    background-color: white;
+    opacity: .9;
+    color: black;
+    height: 95px;
+    width: auto;
+}
+
+.carousel-control-next {
+    transform: rotate(180deg);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 45px;
+    height: 45px;
+}
+
+button {
+    font-size: 15px;
+    margin: 0 5px;
+    visibility: hidden;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 footer {
@@ -99,8 +156,8 @@ footer {
     color: #fff;
     color: #ccc;
     text-align: center;
-    background: #666;
-    border-top: 8px solid #4aaaa5;
+    background: rgb(17, 27, 59);
+    border-top: 8px solid #123679;
     height: 50px;
     position: fixed;
     left: 0;
@@ -110,4 +167,88 @@ footer {
 
 .px-0 {
     padding: 0 !important;
+}
+
+@media only screen and (max-width: 841px) {
+    #myCarousel {
+        width: 700px;
+        margin: -85px auto;
+    }
+
+    #portfolio-header {
+        width: 700px;
+    }
+
+    .carousel-item {
+        width: 700px;
+        height: 825px;
+        overflow: hidden;
+    }
+
+    .carousel-caption {
+        height: 100px;
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+
+    .form,
+    .main {
+        width: 650px;
+    }
+
+    button {
+        /* margin: 0, auto;
+        position: fixed;
+        left: 50%;
+        transform: translate(-50%, 0%); */
+        visibility: visible;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+
+    .navbar-brand {
+        width: 150px;
+        font-size: 18px;
+    }
+
+    #portfolio-header {
+        width: 315px;
+    }
+
+    .form,
+    .main {
+        width: 315px;
+    }
+
+    #myCarousel {
+        width: 315px;
+        margin: -95px auto;
+    }
+
+    .carousel-item {
+        width: 315px;
+        height: 450px;
+        overflow: hidden;
+    }
+
+    .carousel-item img {
+        height: auto;
+        width: 315px;
+    }
+
+    .carousel-caption {
+        height: 15px;
+        width: 315px;
+        /* margin: -35px auto; */
+
+    }
+
+    footer {
+        padding: 25px 0;
+        height: 20px;
+    }
+
 }
