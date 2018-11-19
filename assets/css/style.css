@@ -39,7 +39,8 @@ hr {
 
 .headshot {
     float: left;
-    margin: 0 23px 60px 0;
+    margin: 0 23px 10px 0;
+    width: 240px;
 }
 
 #app {
@@ -252,7 +253,13 @@ footer {
 
     .form,
     .main {
-        width: 315px;
+        width: 310px;
+    }
+
+    .headshot {
+        float: none;
+        margin: 0 20px 15px 20px;
+        width: 200px;
     }
 
     #myCarousel {
@@ -271,14 +278,9 @@ footer {
         width: 315px;
     }
 
-    /* .carousel-caption {
-        height: 15px;
-        width: 315px;
-        /* margin: -35px auto; */
+    footer {
+        visibility: hidden;
+    }
 
-}
 
-*/ footer {
-    padding: 25px 0;
-    height: 20px;
 }
